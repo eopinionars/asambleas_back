@@ -66,8 +66,7 @@ def sendMail(body, asambleista, password, correos=None):
                   custodiarlas debidamente y no compartirlas.</li>
                   <li>Para ingresar de forma segura a <span style="font-weight:bold">eOpinion-APP</span> y evitar equivocaciones, copie y pegue desde este mensaje, 
                   el usuario y la contraseña asignadas.</li>
-                  <li>Si usted otorga un poder, el apoderado deberá ingresar con sus propias credenciales y registrar el poder de acuerdo con el instructivo y con el 
-                  reglamento o estatutos de su comunidad o institución.</li>
+                  <li>Si usted otorga un poder, el apoderado deberá ingresar con sus propias credenciales.</li>
                   <li>Una vez haya ingresado a <span style="font-weight:bold">eOpinion-APP</span> encontrará su nombre e información relacionada con su participación 
                   en la reunión. En caso de ser apoderado de una o varias unidades, deberá cargar el (los) poder (es) con anticipación (mínimo 24 horas antes de la 
                   reunión) presionando el botón <span style="font-weight:bold">“Registro de Poderes”</span>, para así ser validados y asociados a las unidades correspondientes.</li>
@@ -82,7 +81,6 @@ def sendMail(body, asambleista, password, correos=None):
                   <li>Finalmente, recuerde que para las votaciones deberá mantener abierta y visible la pestaña eOpinion-APP en el navegador de internet.</li>
                 </ul>
                 <p><span style="font-weight:bold">PD: Recuerde revisar y practicar con anticipación el tutorial y las instrucciones para participar en la reunión y votar.</span></p>
-
                 <p>Para ingresar a la aplicación haga click <a href="%s"> AQUÍ</a> y utilice las siguientes credenciales.</p>       
                 <span style="font-weight: bold; text-decoration: underline;">Usuario</span><span style="font-weight: bold;">: </span>%s
                 <br>
