@@ -56,31 +56,18 @@ def sendMail(body, asambleista, password, correos=None):
             <body>
                 <span>Reciba un cordial saludo del equipo de eOpinion | opiniones que cuentan.</span>
                 <p>%s</p>                
-                En esta comunicación encontrará las credenciales únicas de acceso a <span style="font-weight:bold">eOpinion-APP</span>, 
-                las cuales son generadas automáticamente y de forma encriptada para su seguridad.<br/><br/>
-                El ingreso a <span style="font-weight:bold">eOpinion-APP</span> lo podrá hacer desde un smart phone, tablet o computador 
-                con internet mínimo de 10Mb, permitiéndole interactuar y tomar decisiones de forma confiable. En este sentido es 
-                importante tener en cuenta para el éxito de la reunión, las siguientes recomendaciones técnicas y de procedimiento:<br/><br/>
+                En esta comunicación encontrará las credenciales únicas de acceso a <span style="font-weight:bold">eOpinion-APP</span> de uso <span style="font-weight:bold">EXCLUSIVO</span> para representar la(s) unidad(es) privada(s) de acuerdo con los poderes y coeficientes corresponidentes.<br/><br/>
+                Al ingresar a  <span style="font-weight:bold">eOpinion-APP</span> lencontrará la información relacionada con su participación. Por favor lea cuidadosamente el siguiente procedimiento y atienda las recomendaciones.<br/><br/>
                 <ul>
-                  <li>Tenga en cuenta que las credenciales que le suministraremos en esta comunicación son personales e intransferibles, por lo cual sugerimos 
-                  custodiarlas debidamente y no compartirlas.</li>
-                  <li>Para ingresar de forma segura a <span style="font-weight:bold">eOpinion-APP</span> y evitar equivocaciones, copie y pegue desde este mensaje, 
-                  el usuario y la contraseña asignadas.</li>
-                  <li>Si usted otorga un poder, el apoderado deberá ingresar con sus propias credenciales.</li>
-                  <li>Una vez haya ingresado a <span style="font-weight:bold">eOpinion-APP</span> encontrará su nombre e información relacionada con su participación 
-                  en la reunión. En caso de ser apoderado de una o varias unidades, deberá cargar el (los) poder (es) con anticipación (mínimo 24 horas antes de la 
-                  reunión) presionando el botón <span style="font-weight:bold">“Registro de Poderes”</span>, para así ser validados y asociados a las unidades correspondientes.</li>
-                  <li>También tendrá la posibilidad de descargar para su consulta o impresión, todos los documentos relacionados con la reunión (convocatoria, formato de 
-                  poderes, reglamento de asamblea e informes).</li>
-                  <li>Asimismo, encontrará en la parte superior de la interfaz el botón <span style="font-weight:bold">"Verificar Quórum"</span> con el cual podrá confirmar su 
-                  presencia en la reunión cuando lo indique el moderador. De la misma forma en la parte inferior visualizará el botón <span style="font-weight:bold">"Ir a votación"</span> 
-                  con el cual podrá acceder a las votaciones cuando le sea indicado por el moderador.</li>
-                  <li>Además, visualizará el vínculo <span style="font-weight:bold">"Ir a la reunión"</span> que le llevará directamente a la videoconferencia Zoom.</li>
-                  <li>Tenga en cuenta que, si va a conectarse desde un computador no necesitará descargar la aplicación de Zoom, pero si lo va a hacer desde un smart phone 
-                  o una tableta, si requerirá descargarla.</li>
-                  <li>Finalmente, recuerde que para las votaciones deberá mantener abierta y visible la pestaña eOpinion-APP en el navegador de internet.</li>
+                  <li>Seleccione el usuario y contraseña asignados <span style="font-weight:bold">(del primero al último caracter).</span></li>
+                  <li>Cópielo con <span style="font-weight:bold">(Control C).</span></li>
+                  <li>Péguelo con <span style="font-weight:bold">(Control V)</span> en el campo correspondiente en <span style="font-weight:bold">eOpinion-APP</span>, luego haga click en el botón <span style="font-weight:bold">ACCEDER.</span></li>
+                  <li>Cuando haya ingresado, encontrará el enlace <span style="font-weight:bold">"Ir a la reunión"</span> el cual le dará ingreso directo a la videoconferencia.</li>
+                  <li>Para asegurar su ingreso a la aplicación, evite digitar los caracteres de las credenciales, en su lugar copie y pegue.</li>
+                  <li>Durante la reunión mantenga abiertas en el navegador las pestañas <span style="font-weight:bold">eOpinion-APP</span> para la votación y <span style="font-weight:bold">Zoom</span> 
+                  para la videoconferencia.</li>
+                  <li><span style="font-weight:bold">Recomendamos</span> ingresar desde un computador y asegúrese de haber visto el VIDEO TUTORIAL e INSTRUCTIVO suministrado por la administración.</li>
                 </ul>
-                <p><span style="font-weight:bold">PD: Recuerde revisar y practicar con anticipación el tutorial y las instrucciones para participar en la reunión y votar.</span></p>
                 <p>Para ingresar a la aplicación haga click <a href="%s"> AQUÍ</a> y utilice las siguientes credenciales.</p>       
                 <span style="font-weight: bold; text-decoration: underline;">Usuario</span><span style="font-weight: bold;">: </span>%s
                 <br>
