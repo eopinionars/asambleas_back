@@ -134,6 +134,8 @@ def createUser(request, pk=None):
 
             usuarios_no_creados = []
             correosFalla = []
+            if len(excel_content) == 0:
+                raise Exception("Error leyendo archivo de usuarios)
             for row in excel_content:    # Iterate through rows
                 if row != '':
                     inmueble, nombres, documento, correo, celular, coeficiente, mora = row.split(
