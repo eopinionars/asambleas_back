@@ -61,7 +61,7 @@ class Apoderado(models.Model):
     representado_por = models.ForeignKey(
         Asambleista, on_delete=models.CASCADE, null=True, related_name='representado_por')
     validado = models.BooleanField(default=False)
-    documento_poder = models.FileField(upload_to='public/poderes/', validators=[
+    documento_poder = models.FileField(upload_to='poderes/', validators=[
                                        FileExtensionValidator(allowed_extensions=doc_poder_ext)], null=False, blank=True)
     sumado = models.BooleanField(default=False)
     externo = models.BooleanField(default=False)
