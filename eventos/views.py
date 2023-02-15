@@ -85,10 +85,10 @@ class ListEventosView(viewsets.ModelViewSet):
         if self.request.user.is_staff:
             archivos = []
             if evento.documento_excel:
-                documento_excel = 'media/' + str(evento.documento_excel)
+                documento_excel = 'public/' + str(evento.documento_excel)
                 archivos.append(documento_excel)
             if evento.logo_asamblea:
-                logo_asamblea = 'media/' + str(evento.logo_asamblea)
+                logo_asamblea = 'public/' + str(evento.logo_asamblea)
                 archivos.append(logo_asamblea)
 
             deleteBucketObjects(archivos)
@@ -327,7 +327,7 @@ class DocumentosView(viewsets.ModelViewSet):
         # check if request.user is staff
         if self.request.user.is_staff:
             archivos = []
-            archivos.append('media/' + str(documento.documento))
+            archivos.append('public/' + str(documento.documento))
             deleteBucketObjects(archivos)
             self.perform_destroy(documento)
             return Response({'detail': 'Documento eliminado'}, status=status.HTTP_204_NO_CONTENT)
