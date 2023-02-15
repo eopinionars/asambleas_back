@@ -133,6 +133,7 @@ def createUser(request, pk=None):
             excel_content.pop(0)
 
             usuarios_no_creados = []
+            correosFalla = []
             for row in excel_content:    # Iterate through rows
                 if row != '':
                     inmueble, nombres, documento, correo, celular, coeficiente, mora = row.split(
@@ -154,7 +155,6 @@ def createUser(request, pk=None):
                         asambleista.set_password(password)
 
                         try:
-                            correosFalla = []
                             asambleista.save()
                             validaEnvio = sendMail(
                                 evento.bodyCorreo, asambleista, password, correos=correo.strip())
