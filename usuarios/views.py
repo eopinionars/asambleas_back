@@ -124,7 +124,10 @@ def createUser(request, pk=None):
                                       aws_access_key_id=AWS_ACCESS_KEY_ID, aws_secret_access_key=AWS_SECRET_ACCESS_KEY)
             file_obj = s3_session.get_object(
                 Bucket=AWS_STORAGE_BUCKET_NAME, Key=nombre_archivo)
-            excel_content = file_obj['Body'].read().decode('utf-8')
+            try:
+                excel_content = file_obj['Body'].read().decode('utf-8')
+            except:
+                excel_content = file_obj['Body'].read().decode('windows-1252')
 
             excel_content = excel_content.split('\n')
             excel_content.pop(0)
