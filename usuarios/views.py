@@ -111,7 +111,7 @@ def createUser(request, pk=None):
         nombre_archivo = str(evento.documento_excel)
         # Valida si existe archivo para el evento
         if nombre_archivo:
-            nombre_archivo = 'media/' + nombre_archivo
+            nombre_archivo = 'public/' + nombre_archivo
             # Access to S3 bucket
             AWS_ACCESS_KEY_ID = os.environ.get(
                 'BUCKETEER_AWS_ACCESS_KEY_ID', '')
@@ -369,7 +369,7 @@ class ApoderadosView(viewsets.ModelViewSet):
         # check if request.user is staff
         if self.request.user.is_staff:
             archivos = []
-            documento_poder = 'media/' + str(apoderado.documento_poder)
+            documento_poder = 'public/' + str(apoderado.documento_poder)
             archivos.append(documento_poder)
             deleteBucketObjects(archivos)
             self.perform_destroy(apoderado)
