@@ -126,7 +126,7 @@ def createUser(request, pk=None):
                 Bucket=AWS_STORAGE_BUCKET_NAME, Key=nombre_archivo)
             try:
                 excel_content = file_obj['Body'].read().decode('utf-8')
-            except:
+            except UnicodeDecodeError:
                 excel_content = file_obj['Body'].read().decode('windows-1252')
 
             excel_content = excel_content.split('\n')
@@ -135,7 +135,7 @@ def createUser(request, pk=None):
             usuarios_no_creados = []
             correosFalla = []
             if len(excel_content) == 0:
-                raise Exception("Error leyendo archivo de usuarios")
+                raise Exception(f"Error leyendo archivo de usuarios\n{excel_content}")
             for row in excel_content:    # Iterate through rows
                 if row != '':
                     inmueble, nombres, documento, correo, celular, coeficiente, mora = row.split(
